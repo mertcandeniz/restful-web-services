@@ -1,4 +1,4 @@
-package com.mertcandeniz.restfullwebservices;
+package com.mertcandeniz.restfullwebservices.restfullwebservices.helloworld;
 
 public class HelloWorldBean {
     private String message;

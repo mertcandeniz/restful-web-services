@@ -1,20 +1,20 @@
-package com.mertcandeniz.restfullwebservices;
+package com.mertcandeniz.restfullwebservices.restfullwebservices.helloworld;
 
-import com.mertcandeniz.restfullwebservices.HelloWorldBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Locale;
 
 @RestController
 @Controller
 public class HelloWorldController {
 
-    //method : Sadece response almayı hedeflediğimiz için GET yeterli
-    //url : /hello-world
+    @Autowired
+    private MessageSource messageSource;
 
-//    @RequestMapping(method = RequestMethod.GET, path = "/hello-world")
-//    public String helloWorld() {
-//        return "Hello World";
-//    }
     @GetMapping (path = "/hello-world")
     public String helloWorld2() {
         return "Hello World";
@@ -29,5 +29,9 @@ public class HelloWorldController {
     @GetMapping (path = "/hello-world/path-variable/{name}")
     public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
         return new HelloWorldBean(String.format("Hello World, %s", name));
+    }
+    @GetMapping (path = "/hello-world-inter")
+    public String helloWorldInternationalization() {
+        return messageSource.getMessage("good.morning.message", null,"Default Message", LocaleContextHolder.getLocale());
     }
 }

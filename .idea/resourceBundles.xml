@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <file url="file://$PROJECT_DIR$/src/main/resources/messa_en_fr.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/messa_en_nl.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/messa_en_tr.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/messages_fr.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/messages_nl.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/messages_tr.properties" />
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/main/resources/messages.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/messages_fr.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/messages_nl.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/messages_tr.properties" />
+      <base-name>messages</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/main/resources/messages.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/messages_fr.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/messages_nl.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/messages_tr.properties" />
+      <base-name>messages</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>

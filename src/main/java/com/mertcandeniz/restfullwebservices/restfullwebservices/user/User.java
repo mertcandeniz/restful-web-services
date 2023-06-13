@@ -1,13 +1,18 @@
-package com.mertcandeniz.restfullwebservices;
+package com.mertcandeniz.restfullwebservices.restfullwebservices.user;
 
+
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.Size;
 
 import java.util.Date;
 
 public class User {
     private Integer id;
 
+    @Size(min = 2, message = "Name should at least have 2 characters.")
+//  @Size(max = 6, message = "Name should be shorter than 6 characters")
     private String name;
-
+    @Past
     private Date birthDate;
 
     public User(Integer id, String name, Date birthDate) {

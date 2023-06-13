@@ -1,6 +1,5 @@
-package com.mertcandeniz.restfullwebservices;
+package com.mertcandeniz.restfullwebservices.restfullwebservices.user;
 
-import com.mertcandeniz.restfullwebservices.User;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

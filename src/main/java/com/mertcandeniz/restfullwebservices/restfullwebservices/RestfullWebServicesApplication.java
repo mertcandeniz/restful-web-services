@@ -1,4 +1,4 @@
-package com.mertcandeniz.restfullwebservices;
+package com.mertcandeniz.restfullwebservices.restfullwebservices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
